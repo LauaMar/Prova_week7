@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Benvenuti in LibriOnLine!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/446c3c81d8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="code.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <main>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="images/Libri.jpg" class="headerImg" />
+                            </div>
+                            <div class="col-6">
+                                <h1>LibriOnLine!</h1>
+                            </div>
+                            <div class="col-3">
+                                <img src="images/Libri.jpg" class="headerImg" />
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <nav>
+                    <ul class="nav_items">
+                        <li> <a class="nav_link" href="Home.html"> <i class="fas fa-home"></i> Home </a> </li>
+                        <li> <a class="nav_link" href="NewOrder.html"><i class="fas fa-shopping-basket"></i> Ordina dei libri </a> </li>
+                        <li> <a class="nav_link" href="Newsletter.html"><i class="fas fa-folder-open"></i> Iscriviti alla newsletter </a> </li>
+                        <li class="activePage"> <a class="nav_link" href="Info.html"><i class="fas fa-address-card"></i> Le nostre informazioni </a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <main>
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-3">
+                              <ul class="Info_items">
+                                  <li> <button class="infoBTN" onclick="javascript:SelezionaVisibilita('AboutUs')"><i class="fas fa-info-circle"></i> About Us</button> </li>
+                                  <li>  <button class="infoBTN" onclick="javascript:SelezionaVisibilita('Sped')"><i class="fas fa-info-circle"></i> Spedizioni</button> </li>
+                                  <li><button class="infoBTN" onclick="javascript:SelezionaVisibilita('Resi')"><i class="fas fa-info-circle"></i> Resi</button> </li>
+                                  <li> <button class="infoBTN" onclick="javascript:SelezionaVisibilita('FAQ')"><i class="fas fa-info-circle"></i> FAQ</button> </li>
+                              </ul>
+                          </div>
+                          <div class="col-9">
+                              <div id="InfoPreliminari">
+                                  <h4> Le nostre informazioni</h4>
+                                  Scegli le informazioni da visualizzare dal menu' alla tua sinistra!
+                              </div>
+                              <div id="AboutUs" class="info">
+                                  <h4>About Us</h4>
+                                  Aliquam sagittis turpis consectetur felis vestibulum, non finibus libero volutpat. Mauris ut mi erat. In tortor nibh, hendrerit id nulla volutpat, consequat tincidunt metus. Aenean elementum porta consequat. Etiam scelerisque finibus ex quis fermentum. Proin est purus, ultricies quis felis in, pulvinar gravida sem. Vestibulum consequat sapien id pulvinar volutpat. In hac habitasse platea dictumst. Duis porttitor est vel orci fermentum consectetur. Duis mi ligula, pulvinar eget sem sit amet, bibendum fringilla lectus. Fusce quis suscipit ex. Donec non varius diam. Aenean consectetur nulla tempus, rhoncus magna non, ultrices enim. Cras sit amet sodales diam, a efficitur sapien. Nam sapien mi, mattis scelerisque accumsan ut, mollis non nulla.
+                              </div>
+                              <div id="Sped" class="info">
+                                  <h4>Spedizioni</h4>
+                                  Interdum et malesuada fames ac ante ipsum primis in faucibus. In a rhoncus sapien, convallis tempus dolor. Vivamus vel accumsan purus, nec vehicula mi. Etiam finibus tempus nisi ac pulvinar. Pellentesque massa ex, aliquet eget tempor at, molestie id lacus. Etiam posuere commodo venenatis. Proin in fringilla magna, nec sollicitudin libero. Nullam sed euismod urna, in lobortis libero. Nunc mauris urna, imperdiet a sollicitudin vel, ultricies id purus. Phasellus maximus diam ut pretium vulputate. Aenean libero sapien, interdum in posuere at, porttitor vel ipsum. Phasellus in mauris id lectus tempor faucibus.
+                              </div>
+                              <div id="Resi" class="info">
+                                  <h4>Resi</h4>
+                                  Suspendisse nec faucibus augue, sit amet ultrices magna. Sed viverra ipsum quis metus rhoncus, vel mattis dolor commodo. Donec ut facilisis eros. Curabitur posuere ex turpis, vitae blandit tellus sollicitudin sed. Sed sodales magna hendrerit erat dictum gravida in vel velit. Mauris consectetur, turpis sit amet dictum pellentesque, ex erat sollicitudin metus, nec cursus risus tortor non eros. Proin hendrerit facilisis sem eu auctor. Sed dignissim tortor elit, bibendum bibendum turpis pellentesque quis. Etiam sit amet venenatis libero. Nam nec maximus arcu. Integer gravida metus ut tellus aliquet pharetra. Cras sit amet velit bibendum, ultrices risus vel, accumsan justo.
+                              </div>
+                              <div id="FAQ"class="info">
+                                  <h4>FAQ</h4>
+                                  Cras id imperdiet diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus sed magna eu odio congue malesuada. Vestibulum pharetra turpis non lacinia lacinia. Duis nulla tellus, vulputate consectetur nisl et, euismod maximus felis. Praesent quis libero posuere leo fringilla suscipit consequat nec lectus. Praesent scelerisque diam nec massa pellentesque molestie. Fusce massa tortor, vulputate non consectetur ut, viverra sed felis. Aliquam fringilla magna nec erat venenatis, placerat dignissim ante vestibulum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In hendrerit congue finibus. Praesent sodales justo ut neque feugiat, sed ornare metus faucibus. Quisque in erat lacinia arcu sodales mollis accumsan sed ligula.
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </main>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <footer>
+                    &nbsp;
+                    &copy; &nbsp; LibriOnLine!
+                </footer>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

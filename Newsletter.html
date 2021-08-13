@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Benvenuti in LibriOnLine!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/446c3c81d8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="code.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <main>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="images/Libri.jpg" class="headerImg" />
+                            </div>
+                            <div class="col-6">
+                                <h1>LibriOnLine!</h1>
+                            </div>
+                            <div class="col-3">
+                                <img src="images/Libri.jpg" class="headerImg" />
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <nav>
+                    <ul class="nav_items">
+                        <li> <a class="nav_link" href="Home.html"> <i class="fas fa-home"></i> Home </a> </li>
+                        <li> <a class="nav_link" href="NewOrder.html"> <i class="fas fa-shopping-basket"></i> Ordina dei libri </a> </li>
+                        <li class="activePage"> <a class="nav_link" href="Newsletter.html"><i class="fas fa-folder-open"></i> Iscriviti alla newsletter </a> </li>
+                        <li> <a class="nav_link" href="Info.html"><i class="fas fa-address-card"></i> Le nostre informazioni </a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <main>
+                    &nbsp;
+                    <h4>Benvenuto nella Newsletter di LibriOnLine!!</h4>
+                    <form method="post">
+                        <table class="table table-borderless NewsletterT">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <label for="cognome">Inserisci il tuo cognome</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="cognome" id="cognome" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="nome">Inserisci il tuo nome</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="nome" id="nome" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="email">Inserisci la tua e-mail</label>
+                                    </td>
+                                    <td>
+                                        <input type="email" id="email" name="email" placeholder="tuaemail@email.com">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="frequenzaRicezione">Con che frequenza vuoi avere nostre notizie?</label>
+                                    </td>
+                                    <td>
+                                        <select name=" Frequenza" id="frequenzaNews">
+                                            <option id="frequenzaNews" value="">--Scegli un'opzione--</option>
+                                            <option id="frequenzaNews" value="quotidiana"> Quoridiana </option>
+                                            <option id="frequenzaNews" value="settimanale"> Settimanale </option>
+                                            <option id="frequenzaNews" value="mensile"> Mensile </option>
+                                            <option id="frequenzaNews" value="trimestrale"> Trimestrale </option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="Submit" name="Conferma" id="Conferma" value="Conferma" onclick="javascript: ConfermaMi()" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+
+                </main>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <footer>
+                    &nbsp;
+                    &copy; &nbsp; LibriOnLine!
+                </footer>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
